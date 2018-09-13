@@ -50,6 +50,10 @@
 
 
 
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
 
 
 
@@ -87,11 +91,11 @@
     scheme: 'Gemini',
     version: '6.4.1',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: false,
+    fancybox: true,
     fastclick: false,
     lazyload: false,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeIn","post_body":"slideUpIn","coll_header":"slideUpIn","sidebar":"slideDownIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -110,8 +114,8 @@
 
   <meta name="description" content="第 2 章 新手必须掌握的 Linux 命令">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux">
-<meta property="og:url" content="http://yoursite.com/2018/09/11/Linux/index.html">
+<meta property="og:title" content="Linux教程">
+<meta property="og:url" content="http://yoursite.com/2018/09/10/Linux教程/index.html">
 <meta property="og:site_name" content="henRyXzx">
 <meta property="og:description" content="第 2 章 新手必须掌握的 Linux 命令">
 <meta property="og:locale" content="zh-CN">
@@ -157,9 +161,9 @@
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/ecb0a9c3gy1fssdprmr4vj20nu0lo782.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/ecb0a9c3gy1fssds70s8mj20j00fin00.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/ecb0a9c3gy1fsseerskifj20ou0610tb.jpg">
-<meta property="og:updated_time" content="2018-09-10T16:21:04.529Z">
+<meta property="og:updated_time" content="2018-09-12T14:45:12.869Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux">
+<meta name="twitter:title" content="Linux教程">
 <meta name="twitter:description" content="第 2 章 新手必须掌握的 Linux 命令">
 <meta name="twitter:image" content="https://ws1.sinaimg.cn/large/ecb0a9c3gy1fsrdrhrknyj20mj0ci400.jpg">
 
@@ -168,7 +172,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/09/11/Linux/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/09/10/Linux教程/"/>
 
 
 
@@ -178,7 +182,7 @@
   };
 </script>
 
-  <title>Linux | henRyXzx</title>
+  <title>Linux教程 | henRyXzx</title>
   
 
 
@@ -308,14 +312,6 @@
     <a href="/archives/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
   </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-schedule">
-    <a href="/schedule/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />日程表</a>
-  </li>
 
       
       
@@ -365,7 +361,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/11/Linux/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/10/Linux教程/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="human">
@@ -382,7 +378,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Linux
+          <h1 class="post-title" itemprop="name headline">Linux教程
               
             
           </h1>
@@ -407,12 +403,24 @@
                 
               
 
-              <time title="创建时间：2018-09-11 00:08:35 / 修改时间：00:21:04" itemprop="dateCreated datePublished" datetime="2018-09-11T00:08:35+08:00">2018-09-11</time>
+              <time title="创建时间：2018-09-10 00:08:35" itemprop="dateCreated datePublished" datetime="2018-09-10T00:08:35+08:00">2018-09-10</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-09-12 22:45:12" itemprop="dateModified" datetime="2018-09-12T22:45:12+08:00">2018-09-12</time>
               
             
           </span>
@@ -424,6 +432,17 @@
           
 
           
+          
+             <span id="/2018/09/10/Linux教程/" class="leancloud_visitors" data-flag-title="Linux教程">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
@@ -688,8 +707,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/09/10/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2018/04/25/Linux makefile实验/" rel="next" title="Linux makefile实验">
+                <i class="fa fa-chevron-left"></i> Linux makefile实验
               </a>
             
           </div>
@@ -770,7 +789,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -903,7 +922,11 @@
 
 
 
+  
 
+
+
+  
 
 
 
@@ -930,6 +953,16 @@
   
   
     <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
   
 
 
@@ -987,6 +1020,65 @@
 
 
   
+
+  
+  <script>
+    
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
+        .done(function ({ results }) {
+          if (results.length > 0) {
+            var counter = results[0];
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text(counter.time + 1);
+            
+            Counter('put', `/classes/Counter/${counter.objectId}`, JSON.stringify({ time: { "__op":"Increment", "amount":1 } }))
+            
+            .fail(function ({ responseJSON }) {
+                console.log('Failed to save Visitor num, with error message: ' + responseJSON.error);
+            })
+          } else {
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text('Counter not initialized! See more at console err msg.');
+              console.error('ATTENTION! LeanCloud counter has security bug, see here how to solve it: https://github.com/theme-next/hexo-leancloud-counter-security. \n But you also can use LeanCloud without security, by set \'security\' option to \'false\'.');
+            
+          }
+        })
+      .fail(function ({ responseJSON }) {
+        console.log('LeanCloud Counter Error:' + responseJSON.code + " " + responseJSON.error);
+      });
+    }
+    
+
+    $(function() {
+      $.get('https://app-router.leancloud.cn/2/route?appId=' + "CjjT7nlkfnQsQ2y2D7pwRRRw-gzGzoHsz")
+        .done(function ({ api_server }) {
+          var Counter = function (method, url, data) {
+            return $.ajax({
+              method: method,
+              url: `https://${api_server}/1.1${url}`,
+              headers: {
+                'X-LC-Id': "CjjT7nlkfnQsQ2y2D7pwRRRw-gzGzoHsz",
+                'X-LC-Key': "VRNFgQ35cfYwYOj9eNWxSRUt",
+                'Content-Type': 'application/json',
+              },
+              data: data,
+            });
+          };
+          
+          addCount(Counter);
+          
+        })
+    });
+  </script>
+
+
 
   
 
