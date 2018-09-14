@@ -119,24 +119,24 @@
 
 
 
-  <meta name="description" content="编写一个shell过程完成如下功能（必须在脚本中使用函数）">
+  <meta name="description" content="Linux实验二">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux shell程序设计实验2">
-<meta property="og:url" content="http://yoursite.com/2018/04/22/cjm25fbi200046gjgmo7jgu1w">
+<meta property="og:title" content="Linux实验二">
+<meta property="og:url" content="http://yoursite.com/2018/04/20/cjm25x6be0006x0jgu9k09au4/index.html">
 <meta property="og:site_name" content="henRyXzx">
-<meta property="og:description" content="编写一个shell过程完成如下功能（必须在脚本中使用函数）">
+<meta property="og:description" content="Linux实验二">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-09-12T14:43:25.542Z">
+<meta property="og:updated_time" content="2018-09-12T14:14:30.220Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux shell程序设计实验2">
-<meta name="twitter:description" content="编写一个shell过程完成如下功能（必须在脚本中使用函数）">
+<meta name="twitter:title" content="Linux实验二">
+<meta name="twitter:description" content="Linux实验二">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/04/22/cjm25fbi200046gjgmo7jgu1w"/>
+  <link rel="canonical" href="http://yoursite.com/2018/04/20/cjm25x6be0006x0jgu9k09au4/"/>
 
 
 
@@ -146,7 +146,7 @@
   };
 </script>
 
-  <title>Linux shell程序设计实验2 | henRyXzx</title>
+  <title>Linux实验二 | henRyXzx</title>
   
 
 
@@ -329,7 +329,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/22/cjm25fbi200046gjgmo7jgu1w">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/20/cjm25x6be0006x0jgu9k09au4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="human">
@@ -346,7 +346,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Linux shell程序设计实验2
+          <h1 class="post-title" itemprop="name headline">Linux实验二
               
             
           </h1>
@@ -371,7 +371,7 @@
                 
               
 
-              <time title="创建时间：2018-04-22 00:08:35" itemprop="dateCreated datePublished" datetime="2018-04-22T00:08:35+08:00">2018-04-22</time>
+              <time title="创建时间：2018-04-20 00:08:35" itemprop="dateCreated datePublished" datetime="2018-04-20T00:08:35+08:00">2018-04-20</time>
             
 
             
@@ -388,7 +388,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-09-12 22:43:25" itemprop="dateModified" datetime="2018-09-12T22:43:25+08:00">2018-09-12</time>
+                <time title="修改时间：2018-09-12 22:14:30" itemprop="dateModified" datetime="2018-09-12T22:14:30+08:00">2018-09-12</time>
               
             
           </span>
@@ -402,8 +402,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/04/22/cjm25fbi200046gjgmo7jgu1w#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count gitment-comments-count" data-xid="/2018/04/22/cjm25fbi200046gjgmo7jgu1w" itemprop="commentsCount"></span>
+                <a href="/2018/04/20/cjm25x6be0006x0jgu9k09au4/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count gitment-comments-count" data-xid="/2018/04/20/cjm25x6be0006x0jgu9k09au4/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -411,7 +411,7 @@
 
           
           
-             <span id="/2018/04/22/cjm25fbi200046gjgmo7jgu1w" class="leancloud_visitors" data-flag-title="Linux shell程序设计实验2">
+             <span id="/2018/04/20/cjm25x6be0006x0jgu9k09au4/" class="leancloud_visitors" data-flag-title="Linux实验二">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -442,11 +442,17 @@
       
 
       
-        <p>编写一个shell过程完成如下功能（必须在脚本中使用函数）</p>
-<a id="more"></a>
-<p>1.程序接收3个参数:$1/$2和$3,合并两个文件$1/$2为$3,并显示，三个文件均为文本文件。<br>2.如果文件$3不存在，那么先报告缺少$3，然后将合并后的内容输出到mydoc.txt。如果有$3，就合并到$3。<br>3.如果文件$2或文件$3不存在，那么先报告缺少$2/$3，只显示$1的内容。</p>
-<p>4.如果文件$1不存在，则提示缺少$1，要求重新运行程序。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">f1</span></span>()&#123;</span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"missing \$2 and \$3"</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"output \$1:"</span></span><br><span class="line">    cat <span class="variable">$1</span></span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">f2</span></span>()&#123;</span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"missing \$3, output mydoc.txt:"</span></span><br><span class="line">    cat <span class="variable">$1</span> <span class="variable">$2</span> &gt;mydoc.txt</span><br><span class="line">    cat mydoc.txt</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">error</span></span>()&#123;</span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"missing \$1 \$2 \$3, error!"</span></span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">if</span> [ <span class="variable">$#</span> -eq 0 ]; <span class="keyword">then</span></span><br><span class="line">    error</span><br><span class="line"><span class="keyword">elif</span> [ <span class="variable">$#</span> -eq 1 ]; <span class="keyword">then</span></span><br><span class="line">    f1 <span class="variable">$1</span></span><br><span class="line"><span class="keyword">elif</span> [ <span class="variable">$#</span> -eq 2 ]; <span class="keyword">then</span></span><br><span class="line">    f2 <span class="variable">$1</span> <span class="variable">$2</span></span><br><span class="line"><span class="keyword">elif</span> [ <span class="variable">$#</span> -eq 3 ]; <span class="keyword">then</span></span><br><span class="line">    cat <span class="variable">$1</span> <span class="variable">$2</span> &gt;<span class="variable">$3</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"output \$3:"</span>    </span><br><span class="line">    cat <span class="variable">$3</span>    </span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"> </span><br><span class="line"><span class="built_in">exit</span> 0</span><br></pre></td></tr></table></figure>
+        <h4 id="Linux实验二"><a href="#Linux实验二" class="headerlink" title="Linux实验二"></a>Linux实验二</h4><a id="more"></a>
+<h4 id="实验环境-win10-redhat5"><a href="#实验环境-win10-redhat5" class="headerlink" title="实验环境:win10 + redhat5"></a>实验环境:win10 + redhat5</h4><h4 id="1、创建组testgroup；"><a href="#1、创建组testgroup；" class="headerlink" title="1、创建组testgroup；"></a>1、创建组testgroup；</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">groupadd testgroup</span><br></pre></td></tr></table></figure>
+<h4 id="2、创建用户a2012，先采用默认设置创建，然后使该用户加入testgroup组。"><a href="#2、创建用户a2012，先采用默认设置创建，然后使该用户加入testgroup组。" class="headerlink" title="2、创建用户a2012，先采用默认设置创建，然后使该用户加入testgroup组。"></a>2、创建用户a2012，先采用默认设置创建，然后使该用户加入testgroup组。</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/groupd //在后面添加a2012</span><br></pre></td></tr></table></figure>
+<h4 id="3、创建用户a2013，其用户主目录为-tmp-a2013，其主组为testgroup，附加组为users。"><a href="#3、创建用户a2013，其用户主目录为-tmp-a2013，其主组为testgroup，附加组为users。" class="headerlink" title="3、创建用户a2013，其用户主目录为/tmp/a2013，其主组为testgroup，附加组为users。"></a>3、创建用户a2013，其用户主目录为/tmp/a2013，其主组为testgroup，附加组为users。</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">useradd -d /tmp/a2013 -g testgroup -G users a2013</span><br></pre></td></tr></table></figure>
+<h4 id="4、用id命令显示a2012和a2013用户信息，并且把这些信息记录到日志文件-tmp-test-log中。"><a href="#4、用id命令显示a2012和a2013用户信息，并且把这些信息记录到日志文件-tmp-test-log中。" class="headerlink" title="4、用id命令显示a2012和a2013用户信息，并且把这些信息记录到日志文件/tmp/test.log中。"></a>4、用id命令显示a2012和a2013用户信息，并且把这些信息记录到日志文件/tmp/test.log中。</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">su a2012</span><br><span class="line">id</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">su 2013</span><br><span class="line">id</span><br></pre></td></tr></table></figure>
+<h4 id="5、参考书本98-99页crontab命令内容，使用root执行crontab-e，编写时程表，完成每隔5分钟把当前时间追加进-tmp-test-log中。"><a href="#5、参考书本98-99页crontab命令内容，使用root执行crontab-e，编写时程表，完成每隔5分钟把当前时间追加进-tmp-test-log中。" class="headerlink" title="5、参考书本98-99页crontab命令内容，使用root执行crontab -e，编写时程表，完成每隔5分钟把当前时间追加进/tmp/test.log中。"></a>5、参考书本98-99页crontab命令内容，使用root执行crontab -e，编写时程表，完成每隔5分钟把当前时间追加进/tmp/test.log中。</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">crontab -e</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">5 * * * * data &gt;&gt; /tmp/test.log</span><br></pre></td></tr></table></figure>
+<h4 id="6、执行crontab-l，把输出内容追加进-tmp-test-log。"><a href="#6、执行crontab-l，把输出内容追加进-tmp-test-log。" class="headerlink" title="6、执行crontab -l，把输出内容追加进/tmp/test.log。"></a>6、执行crontab -l，把输出内容追加进/tmp/test.log。</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">crontab -l &gt;&gt; /tmp/test.log</span><br></pre></td></tr></table></figure>
+<h4 id="7、待完成2次时间记录追加后，执行crontab-r删除当前的时程表。"><a href="#7、待完成2次时间记录追加后，执行crontab-r删除当前的时程表。" class="headerlink" title="7、待完成2次时间记录追加后，执行crontab -r删除当前的时程表。"></a>7、待完成2次时间记录追加后，执行crontab -r删除当前的时程表。</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">crontab -r</span><br></pre></td></tr></table></figure>
+<h4 id="8、把-tmp-test-log拷贝到windows中（注意文本格式的转换），采用记事本打开，看是否看到完整内容。"><a href="#8、把-tmp-test-log拷贝到windows中（注意文本格式的转换），采用记事本打开，看是否看到完整内容。" class="headerlink" title="8、把/tmp/test.log拷贝到windows中（注意文本格式的转换），采用记事本打开，看是否看到完整内容。"></a>8、把/tmp/test.log拷贝到windows中（注意文本格式的转换），采用记事本打开，看是否看到完整内容。</h4>
       
     </div>
 
@@ -473,8 +479,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/21/cjm25fbhw00016gjgrovqyxsa" rel="next" title="Linux shell程序设计实验1">
-                <i class="fa fa-chevron-left"></i> Linux shell程序设计实验1
+              <a href="/2018/04/16/cjm25x6bf0008x0jgbrjk849v/" rel="next" title="Linux课堂练习1">
+                <i class="fa fa-chevron-left"></i> Linux课堂练习1
               </a>
             
           </div>
@@ -483,8 +489,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/04/25/cjm25fbho00006gjg56haybmq" rel="prev" title="Linux makefile实验">
-                Linux makefile实验 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/04/21/cjm25x6bb0004x0jgcg00a8hs/" rel="prev" title="Linux shell程序设计实验1">
+                Linux shell程序设计实验1 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -537,8 +543,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -613,6 +628,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Linux实验二"><span class="nav-number">1.</span> <span class="nav-text">Linux实验二</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#实验环境-win10-redhat5"><span class="nav-number">2.</span> <span class="nav-text">实验环境:win10 + redhat5</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1、创建组testgroup；"><span class="nav-number">3.</span> <span class="nav-text">1、创建组testgroup；</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、创建用户a2012，先采用默认设置创建，然后使该用户加入testgroup组。"><span class="nav-number">4.</span> <span class="nav-text">2、创建用户a2012，先采用默认设置创建，然后使该用户加入testgroup组。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、创建用户a2013，其用户主目录为-tmp-a2013，其主组为testgroup，附加组为users。"><span class="nav-number">5.</span> <span class="nav-text">3、创建用户a2013，其用户主目录为/tmp/a2013，其主组为testgroup，附加组为users。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、用id命令显示a2012和a2013用户信息，并且把这些信息记录到日志文件-tmp-test-log中。"><span class="nav-number">6.</span> <span class="nav-text">4、用id命令显示a2012和a2013用户信息，并且把这些信息记录到日志文件/tmp/test.log中。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5、参考书本98-99页crontab命令内容，使用root执行crontab-e，编写时程表，完成每隔5分钟把当前时间追加进-tmp-test-log中。"><span class="nav-number">7.</span> <span class="nav-text">5、参考书本98-99页crontab命令内容，使用root执行crontab -e，编写时程表，完成每隔5分钟把当前时间追加进/tmp/test.log中。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6、执行crontab-l，把输出内容追加进-tmp-test-log。"><span class="nav-number">8.</span> <span class="nav-text">6、执行crontab -l，把输出内容追加进/tmp/test.log。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7、待完成2次时间记录追加后，执行crontab-r删除当前的时程表。"><span class="nav-number">9.</span> <span class="nav-text">7、待完成2次时间记录追加后，执行crontab -r删除当前的时程表。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8、把-tmp-test-log拷贝到windows中（注意文本格式的转换），采用记事本打开，看是否看到完整内容。"><span class="nav-number">10.</span> <span class="nav-text">8、把/tmp/test.log拷贝到windows中（注意文本格式的转换），采用记事本打开，看是否看到完整内容。</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
