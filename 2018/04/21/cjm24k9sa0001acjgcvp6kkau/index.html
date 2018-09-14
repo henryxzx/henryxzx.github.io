@@ -119,24 +119,24 @@
 
 
 
-  <meta name="description" content="环境：win10 + redhat 5">
+  <meta name="description" content="实验1-1 设计如下一个菜单驱动程序">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux课堂练习1">
-<meta property="og:url" content="http://yoursite.com/2018/04/16/Linux课堂练习1/index.html">
+<meta property="og:title" content="Linux shell程序设计实验1">
+<meta property="og:url" content="http://yoursite.com/2018/04/21/cjm24k9sa0001acjgcvp6kkau/index.html">
 <meta property="og:site_name" content="henRyXzx">
-<meta property="og:description" content="环境：win10 + redhat 5">
+<meta property="og:description" content="实验1-1 设计如下一个菜单驱动程序">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-09-12T14:28:01.409Z">
+<meta property="og:updated_time" content="2018-09-12T14:43:40.982Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux课堂练习1">
-<meta name="twitter:description" content="环境：win10 + redhat 5">
+<meta name="twitter:title" content="Linux shell程序设计实验1">
+<meta name="twitter:description" content="实验1-1 设计如下一个菜单驱动程序">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/04/16/Linux课堂练习1/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/04/21/cjm24k9sa0001acjgcvp6kkau/"/>
 
 
 
@@ -146,7 +146,7 @@
   };
 </script>
 
-  <title>Linux课堂练习1 | henRyXzx</title>
+  <title>Linux shell程序设计实验1 | henRyXzx</title>
   
 
 
@@ -329,7 +329,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/16/Linux课堂练习1/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/21/cjm24k9sa0001acjgcvp6kkau/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="human">
@@ -346,7 +346,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Linux课堂练习1
+          <h1 class="post-title" itemprop="name headline">Linux shell程序设计实验1
               
             
           </h1>
@@ -371,7 +371,7 @@
                 
               
 
-              <time title="创建时间：2018-04-16 00:08:35" itemprop="dateCreated datePublished" datetime="2018-04-16T00:08:35+08:00">2018-04-16</time>
+              <time title="创建时间：2018-04-21 00:08:35" itemprop="dateCreated datePublished" datetime="2018-04-21T00:08:35+08:00">2018-04-21</time>
             
 
             
@@ -388,7 +388,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-09-12 22:28:01" itemprop="dateModified" datetime="2018-09-12T22:28:01+08:00">2018-09-12</time>
+                <time title="修改时间：2018-09-12 22:43:40" itemprop="dateModified" datetime="2018-09-12T22:43:40+08:00">2018-09-12</time>
               
             
           </span>
@@ -402,8 +402,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/04/16/Linux课堂练习1/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count gitment-comments-count" data-xid="/2018/04/16/Linux课堂练习1/" itemprop="commentsCount"></span>
+                <a href="/2018/04/21/cjm24k9sa0001acjgcvp6kkau/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count gitment-comments-count" data-xid="/2018/04/21/cjm24k9sa0001acjgcvp6kkau/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -411,7 +411,7 @@
 
           
           
-             <span id="/2018/04/16/Linux课堂练习1/" class="leancloud_visitors" data-flag-title="Linux课堂练习1">
+             <span id="/2018/04/21/cjm24k9sa0001acjgcvp6kkau/" class="leancloud_visitors" data-flag-title="Linux shell程序设计实验1">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -442,18 +442,16 @@
       
 
       
-        <p>环境：win10 + redhat 5</p>
+        <p>实验1-1</p>
+<p>设计如下一个菜单驱动程序</p>
 <a id="more"></a>
-<h5 id="1、创建组testgroup；"><a href="#1、创建组testgroup；" class="headerlink" title="1、创建组testgroup；"></a>1、创建组testgroup；</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">groupadd testgroup</span><br></pre></td></tr></table></figure>
-<h5 id="2、创建用户a2012，先采用默认设置创建，然后使该用户加入testgroup组。"><a href="#2、创建用户a2012，先采用默认设置创建，然后使该用户加入testgroup组。" class="headerlink" title="2、创建用户a2012，先采用默认设置创建，然后使该用户加入testgroup组。"></a>2、创建用户a2012，先采用默认设置创建，然后使该用户加入testgroup组。</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">useradd a2012</span><br><span class="line">usermod -g testgroup</span><br></pre></td></tr></table></figure>
-<h5 id="3、创建用户a2013，其用户主目录为-tmp-a2013，其主组为testgroup，附加组为users。"><a href="#3、创建用户a2013，其用户主目录为-tmp-a2013，其主组为testgroup，附加组为users。" class="headerlink" title="3、创建用户a2013，其用户主目录为/tmp/a2013，其主组为testgroup，附加组为users。"></a>3、创建用户a2013，其用户主目录为/tmp/a2013，其主组为testgroup，附加组为users。</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">useradd a2013</span><br><span class="line">usermod -g testgroup</span><br><span class="line">usermod -G users</span><br></pre></td></tr></table></figure>
-<h5 id="4、用id命令显示a2012和a2013用户信息，并且把这些信息记录到日志文件-tmp-test-log中。"><a href="#4、用id命令显示a2012和a2013用户信息，并且把这些信息记录到日志文件-tmp-test-log中。" class="headerlink" title="4、用id命令显示a2012和a2013用户信息，并且把这些信息记录到日志文件/tmp/test.log中。"></a>4、用id命令显示a2012和a2013用户信息，并且把这些信息记录到日志文件/tmp/test.log中。</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">id a2012 &gt; /tmp/test.log</span><br><span class="line">id a2013 &gt;&gt; /tmp/test.log</span><br></pre></td></tr></table></figure>
-<h5 id="5、参考书本98-99页crontab命令内容，使用root执行crontab-e，编写时程表，完成每隔5分钟把当前时间追加进-tmp-test-log中。"><a href="#5、参考书本98-99页crontab命令内容，使用root执行crontab-e，编写时程表，完成每隔5分钟把当前时间追加进-tmp-test-log中。" class="headerlink" title="5、参考书本98-99页crontab命令内容，使用root执行crontab -e，编写时程表，完成每隔5分钟把当前时间追加进/tmp/test.log中。"></a>5、参考书本98-99页crontab命令内容，使用root执行crontab -e，编写时程表，完成每隔5分钟把当前时间追加进/tmp/test.log中。</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">crontab -e</span><br><span class="line">*/5 * * * * date &gt;&gt; /tmp/test.log</span><br></pre></td></tr></table></figure>
-<h5 id="6、执行crontab-l，把输出内容追加进-tmp-test-log。"><a href="#6、执行crontab-l，把输出内容追加进-tmp-test-log。" class="headerlink" title="6、执行crontab -l，把输出内容追加进/tmp/test.log。"></a>6、执行crontab -l，把输出内容追加进/tmp/test.log。</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">crontab -l &gt;&gt; /tmp/test.log</span><br></pre></td></tr></table></figure>
-<h5 id="7、待完成2次时间记录追加后，执行crontab-r删除当前的时程表。"><a href="#7、待完成2次时间记录追加后，执行crontab-r删除当前的时程表。" class="headerlink" title="7、待完成2次时间记录追加后，执行crontab -r删除当前的时程表。"></a>7、待完成2次时间记录追加后，执行crontab -r删除当前的时程表。</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">crontab -r</span><br></pre></td></tr></table></figure>
-<h5 id="8、把-tmp-test-log拷贝到windows中（注意文本格式的转换），采用记事本打开，看是否看到完整内容。"><a href="#8、把-tmp-test-log拷贝到windows中（注意文本格式的转换），采用记事本打开，看是否看到完整内容。" class="headerlink" title="8、把/tmp/test.log拷贝到windows中（注意文本格式的转换），采用记事本打开，看是否看到完整内容。"></a>8、把/tmp/test.log拷贝到windows中（注意文本格式的转换），采用记事本打开，看是否看到完整内容。</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">unix2dos test.log   <span class="comment">#将unix中的换行符转换为dos环境下能识别的类型</span></span><br></pre></td></tr></table></figure>
-<p>最后将文件复制到win环境下得到test.log</p>
-
+<p>Use one of the following options:<br>P:To display current directory<br>S:To display the name of running file<br>D:To display today’s date and present time (要求显示为：2017-04-26 05:45:12)<br>L:To see the list of files in your present working directory<br>W:To see who is logged in<br>Q:To quit this program<br>Enter your option and hit:<br>菜单程序将根据用户输入的选择项给出相应信息。要求对用户的输入忽略大小写，对于无效选项的输入给出相应提示。要求使用case语句实现以上功能，输入相应的字母后应该执行相应的命令完成每项功能，如输入P或p，就执行pwd命令。</p>
+<p>实验1-2<br>编写一段bash shell程序，<br>根据键盘输入的学生成绩，显示相应的成绩登等级，<br>其中<br>60分以下为”Failed!”,<br>60～69分为”Passed!”,<br>70~79分为”Medium!”,<br>80~89分为”Good!”，<br>90～100为”Excellent!”。<br>如果输入超过100的分数，则显示错误分数提示。</p>
+<p>如果输入负数，则退出程序，否则一直提示用户输入成绩</p>
+<p>1-1</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line">clear</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"Use one of the following options:</span></span><br><span class="line"><span class="string">P:To display current directory</span></span><br><span class="line"><span class="string">S:To display the name of running file</span></span><br><span class="line"><span class="string">D:To display today's date and present time</span></span><br><span class="line"><span class="string">L:To see the list of files in your present working directory</span></span><br><span class="line"><span class="string">W:To see who is logged in</span></span><br><span class="line"><span class="string">Q:To quit this program</span></span><br><span class="line"><span class="string">Enter your option and hit:"</span></span><br><span class="line"><span class="built_in">read</span> ans</span><br><span class="line"><span class="keyword">case</span> <span class="string">"<span class="variable">$ans</span>"</span> <span class="keyword">in</span></span><br><span class="line">P|p)</span><br><span class="line">    <span class="built_in">pwd</span></span><br><span class="line">    ;;</span><br><span class="line">S|s)</span><br><span class="line">    ls</span><br><span class="line">    ;;</span><br><span class="line">D|d)</span><br><span class="line">    date -d <span class="string">'2017-04-26 05:45:12'</span> <span class="string">'+%Y-%m-%d %H:%M:%S'</span> </span><br><span class="line">    ;;</span><br><span class="line">L|l)</span><br><span class="line">    ls -l</span><br><span class="line">    ;;</span><br><span class="line">W|w)</span><br><span class="line">    who</span><br><span class="line">    ;;</span><br><span class="line">Q|q)</span><br><span class="line">    <span class="built_in">exit</span> 1</span><br><span class="line">    ;;</span><br><span class="line">*)</span><br><span class="line">    <span class="built_in">exit</span> 1</span><br><span class="line"><span class="keyword">esac</span></span><br><span class="line"><span class="built_in">exit</span> 0</span><br></pre></td></tr></table></figure>
+<p>1-2</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="keyword">while</span> <span class="literal">true</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"Please input your score: (0 - 100)"</span></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line"><span class="built_in">read</span> score</span><br><span class="line"><span class="keyword">if</span> [ <span class="variable">$score</span> -lt 0 ];</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line">    <span class="built_in">break</span></span><br><span class="line"><span class="keyword">elif</span> [ <span class="variable">$score</span> -lt 60 ];</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"Failed!"</span></span><br><span class="line"><span class="keyword">elif</span> [ <span class="variable">$score</span> -lt 70 ];</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"Passed!"</span></span><br><span class="line"><span class="keyword">elif</span> [ <span class="variable">$score</span> -lt 80 ];</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"Medium!"</span></span><br><span class="line"><span class="keyword">elif</span> [ <span class="variable">$score</span> -lt 90 ];</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"Good!"</span></span><br><span class="line"><span class="keyword">elif</span> [ <span class="variable">$score</span> -le 100 ];</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"Excellent!"</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"the score must be smaller than 100"</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">done</span></span><br><span class="line"><span class="built_in">exit</span> 0</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -480,8 +478,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/12/Linux实验一/" rel="next" title="Linux实验一">
-                <i class="fa fa-chevron-left"></i> Linux实验一
+              <a href="/2018/04/20/cjm24k9sv0006acjgchf2bzvj/" rel="next" title="Linux实验二">
+                <i class="fa fa-chevron-left"></i> Linux实验二
               </a>
             
           </div>
@@ -490,8 +488,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/04/20/Linux实验二/" rel="prev" title="Linux实验二">
-                Linux实验二 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/04/22/cjm24k9st0005acjg5cfr99lh/" rel="prev" title="Linux shell程序设计实验2">
+                Linux shell程序设计实验2 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -544,17 +542,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -580,7 +569,33 @@
               
 
               
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">分类</span>
+                  
+                </div>
+              
 
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">标签</span>
+                  
+                </div>
               
             </nav>
           
@@ -603,22 +618,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#1、创建组testgroup；"><span class="nav-number">1.</span> <span class="nav-text">1、创建组testgroup；</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2、创建用户a2012，先采用默认设置创建，然后使该用户加入testgroup组。"><span class="nav-number">2.</span> <span class="nav-text">2、创建用户a2012，先采用默认设置创建，然后使该用户加入testgroup组。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3、创建用户a2013，其用户主目录为-tmp-a2013，其主组为testgroup，附加组为users。"><span class="nav-number">3.</span> <span class="nav-text">3、创建用户a2013，其用户主目录为/tmp/a2013，其主组为testgroup，附加组为users。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4、用id命令显示a2012和a2013用户信息，并且把这些信息记录到日志文件-tmp-test-log中。"><span class="nav-number">4.</span> <span class="nav-text">4、用id命令显示a2012和a2013用户信息，并且把这些信息记录到日志文件/tmp/test.log中。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5、参考书本98-99页crontab命令内容，使用root执行crontab-e，编写时程表，完成每隔5分钟把当前时间追加进-tmp-test-log中。"><span class="nav-number">5.</span> <span class="nav-text">5、参考书本98-99页crontab命令内容，使用root执行crontab -e，编写时程表，完成每隔5分钟把当前时间追加进/tmp/test.log中。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#6、执行crontab-l，把输出内容追加进-tmp-test-log。"><span class="nav-number">6.</span> <span class="nav-text">6、执行crontab -l，把输出内容追加进/tmp/test.log。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#7、待完成2次时间记录追加后，执行crontab-r删除当前的时程表。"><span class="nav-number">7.</span> <span class="nav-text">7、待完成2次时间记录追加后，执行crontab -r删除当前的时程表。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#8、把-tmp-test-log拷贝到windows中（注意文本格式的转换），采用记事本打开，看是否看到完整内容。"><span class="nav-number">8.</span> <span class="nav-text">8、把/tmp/test.log拷贝到windows中（注意文本格式的转换），采用记事本打开，看是否看到完整内容。</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
