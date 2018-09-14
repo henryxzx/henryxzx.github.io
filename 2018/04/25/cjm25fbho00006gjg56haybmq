@@ -123,7 +123,7 @@
 <meta name="keywords" content="Linux实验">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux makefile实验">
-<meta property="og:url" content="http://yoursite.com/2018/04/25/cjm24k9rk0000acjgx0hwrbtz/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/04/25/cjm25fbho00006gjg56haybmq">
 <meta property="og:site_name" content="henRyXzx">
 <meta property="og:description" content="按照以下目录结构存放程序，然后制作makefile文件，把makefile文件内容填入表格中。">
 <meta property="og:locale" content="zh-CN">
@@ -139,7 +139,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/04/25/cjm24k9rk0000acjgx0hwrbtz/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/04/25/cjm25fbho00006gjg56haybmq"/>
 
 
 
@@ -332,7 +332,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/25/cjm24k9rk0000acjgx0hwrbtz/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/25/cjm25fbho00006gjg56haybmq">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="human">
@@ -423,8 +423,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/04/25/cjm24k9rk0000acjgx0hwrbtz/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count gitment-comments-count" data-xid="/2018/04/25/cjm24k9rk0000acjgx0hwrbtz/" itemprop="commentsCount"></span>
+                <a href="/2018/04/25/cjm25fbho00006gjg56haybmq#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count gitment-comments-count" data-xid="/2018/04/25/cjm25fbho00006gjg56haybmq" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -432,7 +432,7 @@
 
           
           
-             <span id="/2018/04/25/cjm24k9rk0000acjgx0hwrbtz/" class="leancloud_visitors" data-flag-title="Linux makefile实验">
+             <span id="/2018/04/25/cjm25fbho00006gjg56haybmq" class="leancloud_visitors" data-flag-title="Linux makefile实验">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -507,7 +507,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/22/cjm24k9st0005acjg5cfr99lh/" rel="next" title="Linux shell程序设计实验2">
+              <a href="/2018/04/22/cjm25fbi200046gjgmo7jgu1w" rel="next" title="Linux shell程序设计实验2">
                 <i class="fa fa-chevron-left"></i> Linux shell程序设计实验2
               </a>
             
@@ -517,7 +517,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/09/10/cjm24k9z3000aacjgc04cd0mg/" rel="prev" title="Linux教程">
+              <a href="/2018/09/10/cjm25fbjj000a6gjgucn0kxps" rel="prev" title="Linux教程">
                 Linux教程 <i class="fa fa-chevron-right"></i>
               </a>
             
