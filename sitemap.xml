@@ -2,23 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.henryxzx.com/about/index.html</loc>
-    
-    <lastmod>2018-09-14T16:17:40.013Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.henryxzx.com/tags/index.html</loc>
     
-    <lastmod>2018-09-14T16:09:36.380Z</lastmod>
+    <lastmod>2018-09-17T15:43:41.243Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.henryxzx.com/categories/index.html</loc>
     
-    <lastmod>2018-09-14T16:09:24.549Z</lastmod>
+    <lastmod>2018-09-17T15:42:46.836Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.henryxzx.com/2018/09/17/%E9%80%9A%E8%BF%87UDP53%20%E5%AE%9E%E7%8E%B0%E6%A0%A1%E5%9B%AD%E7%BD%91%E5%85%8D%E8%AE%A4%E8%AF%81%E4%B8%8A%E7%BD%91/</loc>
+    
+    <lastmod>2018-09-17T15:37:48.495Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.henryxzx.com/2018/04/21/Linux%20shell%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AE%9E%E9%AA%8C1/</loc>
+    
+    <lastmod>2018-09-17T15:36:36.782Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.henryxzx.com/2018/04/25/Linux%20makefile%E5%AE%9E%E9%AA%8C/</loc>
+    
+    <lastmod>2018-09-17T15:36:11.802Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.henryxzx.com/2018/09/10/Linux%E6%95%99%E7%A8%8B/</loc>
+    
+    <lastmod>2018-09-17T15:36:00.029Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.henryxzx.com/about/index.html</loc>
+    
+    <lastmod>2018-09-14T16:17:40.013Z</lastmod>
     
   </url>
   
@@ -44,30 +72,9 @@
   </url>
   
   <url>
-    <loc>http://blog.henryxzx.com/2018/09/10/Linux%E6%95%99%E7%A8%8B/</loc>
-    
-    <lastmod>2018-09-14T16:08:32.206Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.henryxzx.com/2018/04/22/Linux%20shell%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AE%9E%E9%AA%8C2/</loc>
     
     <lastmod>2018-09-14T16:08:18.095Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.henryxzx.com/2018/04/21/Linux%20shell%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AE%9E%E9%AA%8C1/</loc>
-    
-    <lastmod>2018-09-14T16:08:13.663Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.henryxzx.com/2018/04/25/Linux%20makefile%E5%AE%9E%E9%AA%8C/</loc>
-    
-    <lastmod>2018-09-14T15:58:51.236Z</lastmod>
     
   </url>
   

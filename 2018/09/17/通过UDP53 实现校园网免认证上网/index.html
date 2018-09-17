@@ -123,17 +123,33 @@
 
 
 
-  <meta name="description" content="keep the groovy.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="标签">
-<meta property="og:url" content="http://blog.henryxzx.com/tags/index.html">
+  <meta name="description" content="一、 前言阿里云的学生服务器买了有一段时间了，本来想拿来部署一个网站的，但是因为国内坑爹的备案制度，导致我又买了一个国外的服务器来部署（国外的学生服务器比国内便宜多了），所以目前阿里云这个服务器就空闲了下来，为了不浪费这个服务器资源，于是就去知乎找了一些有关于学生服务器的用处，就发现有人提了这个用处，而且我们学校 12 点断网后连手机信号也会断，只能通过这种方法来上网，顿时觉得我们学校太 tm 坑">
+<meta name="keywords" content="校园网,Linux,服务器">
+<meta property="og:type" content="article">
+<meta property="og:title" content="通过UDP53实现校园网免认证上网">
+<meta property="og:url" content="http://blog.henryxzx.com/2018/09/17/通过UDP53 实现校园网免认证上网/index.html">
 <meta property="og:site_name" content="henRyXzx">
-<meta property="og:description" content="keep the groovy.">
+<meta property="og:description" content="一、 前言阿里云的学生服务器买了有一段时间了，本来想拿来部署一个网站的，但是因为国内坑爹的备案制度，导致我又买了一个国外的服务器来部署（国外的学生服务器比国内便宜多了），所以目前阿里云这个服务器就空闲了下来，为了不浪费这个服务器资源，于是就去知乎找了一些有关于学生服务器的用处，就发现有人提了这个用处，而且我们学校 12 点断网后连手机信号也会断，只能通过这种方法来上网，顿时觉得我们学校太 tm 坑">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-09-17T15:43:41.243Z">
+<meta property="og:image" content="https://i.loli.net/2018/09/17/5b9fbc122385f.png">
+<meta property="og:image" content="https://i.loli.net/2018/09/17/5b9fbb93ed112.png">
+<meta property="og:image" content="https://i.loli.net/2018/09/17/5b9fbd1161937.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/09/17/5b9fbe50be650.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/09/17/5b9fbe76ef3e0.png">
+<meta property="og:image" content="https://i.loli.net/2018/09/17/5b9fbed0793d1.png">
+<meta property="og:image" content="https://i.loli.net/2018/09/17/5b9fbefc6f997.png">
+<meta property="og:image" content="https://i.loli.net/2018/09/17/5b9fbf1c907bf.png">
+<meta property="og:image" content="https://i.loli.net/2018/09/17/5b9fbf956a7d5.png">
+<meta property="og:image" content="https://i.loli.net/2018/09/17/5b9fc2a1346f4.png">
+<meta property="og:image" content="https://i.loli.net/2018/09/17/5b9fc2cd88e75.png">
+<meta property="og:image" content="https://i.loli.net/2018/09/17/5b9fc30bdf586.png">
+<meta property="og:image" content="https://i.loli.net/2018/09/17/5b9fc3a8cce0b.png">
+<meta property="og:image" content="https://i.loli.net/2018/09/17/5b9fc5f489c7c.png">
+<meta property="og:updated_time" content="2018-09-17T15:37:48.495Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="标签">
-<meta name="twitter:description" content="keep the groovy.">
+<meta name="twitter:title" content="通过UDP53实现校园网免认证上网">
+<meta name="twitter:description" content="一、 前言阿里云的学生服务器买了有一段时间了，本来想拿来部署一个网站的，但是因为国内坑爹的备案制度，导致我又买了一个国外的服务器来部署（国外的学生服务器比国内便宜多了），所以目前阿里云这个服务器就空闲了下来，为了不浪费这个服务器资源，于是就去知乎找了一些有关于学生服务器的用处，就发现有人提了这个用处，而且我们学校 12 点断网后连手机信号也会断，只能通过这种方法来上网，顿时觉得我们学校太 tm 坑">
+<meta name="twitter:image" content="https://i.loli.net/2018/09/17/5b9fbc122385f.png">
 
 
 
@@ -142,7 +158,7 @@
 
 
 
-  <link rel="canonical" href="http://blog.henryxzx.com/tags/"/>
+  <link rel="canonical" href="http://blog.henryxzx.com/2018/09/17/通过UDP53 实现校园网免认证上网/"/>
 
 
 
@@ -152,7 +168,7 @@
   };
 </script>
 
-  <title>标签 | henRyXzx</title>
+  <title>通过UDP53实现校园网免认证上网 | henRyXzx</title>
   
 
 
@@ -261,7 +277,7 @@
         
         
           
-          <li class="menu-item menu-item-tags menu-item-active">
+          <li class="menu-item menu-item-tags">
     <a href="/tags/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
   </li>
@@ -341,98 +357,338 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.henryxzx.com/2018/09/17/通过UDP53 实现校园网免认证上网/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="XZX">
+      <meta itemprop="description" content="keep the groovy.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="henRyXzx">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">标签</h1>
+        
+        
+          <h1 class="post-title" itemprop="name headline">通过UDP53实现校园网免认证上网
+              
+            
+          </h1>
+        
 
-<div class="post-meta">
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-09-17 20:02:47 / 修改时间：23:37:48" itemprop="dateCreated datePublished" datetime="2018-09-17T20:02:47+08:00">2018-09-17</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/计算机网络/" itemprop="url" rel="index"><span itemprop="name">计算机网络</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/09/17/通过UDP53 实现校园网免认证上网/" class="leancloud_visitors" data-flag-title="通过UDP53实现校园网免认证上网">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">热度：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+                 <span>℃</span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="一、-前言"><a href="#一、-前言" class="headerlink" title="一、 前言"></a>一、 前言</h3><p>阿里云的学生服务器买了有一段时间了，本来想拿来部署一个网站的，但是因为国内坑爹的备案制度，导致我又买了一个国外的服务器来部署（国外的学生服务器比国内便宜多了），所以目前阿里云这个服务器就空闲了下来，为了不浪费这个服务器资源，于是就去知乎找了一些有关于学生服务器的用处，就发现有人提了这个用处，而且我们学校 12 点断网后连手机信号也会断，只能通过这种方法来上网，顿时觉得我们学校太 tm 坑了，但这个方法并不适用于所有校园网认证，如需<strong>锐捷认证</strong>的<strong>有线连接</strong>，正巧我们学校的还有无线 web 认证，<s> 可能是学校自己弄的 </s>，总之这个认证系统就很水，这个方法用了一段时间了并没有出任何问题，至于以后就不知道了，<s> 也许网管某天会发现 53 端口走了一堆 malformed packet 然后警告我一波。</s><br><a id="more"></a></p>
+<h3 id="二、环境搭建"><a href="#二、环境搭建" class="headerlink" title="二、环境搭建"></a>二、环境搭建</h3><p>你需要：</p>
+<ul>
+<li><p>一台服务器</p>
+<blockquote>
+<p>阿里云，腾讯云的学生机都可以，甚至 DigitalOcean，Vetur 的国外节点也可以，但由于国外的 vps 使用这个方法时会受到 GFW 的干扰，所以很不稳定，不推荐使用国外节点，但是国外服务器不限带宽还是很爽的。</p>
+</blockquote>
+</li>
+<li><p>一台能连接网络的设备</p>
+<blockquote>
+<p>经过试验，pc 端 windows，macbook，linux 都可以，移动端 ios，Android 也没问题，但是管理工具移动端没有。</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="测试网关"><a href="#测试网关" class="headerlink" title="测试网关"></a>测试网关</h4><p>一般来说如果是使用的无线网络，无线网关会放行 UDP67/68，也就是 DHCP 端口来获取 ip，和 UDP53（DNS 端口）来获取 DNS，使用如下工具来测试 53 端口是否通行：</p>
+<p><a href="https://github.com/BennyThink/UDP53-Filter-Type" target="_blank" rel="noopener">项目地址 </a></p>
+<p>下载下来之后解压并运行 dist 内的 UDP53.exe。</p>
+<p>如果出现的是 congratulations，那就代表 53 端口完全放行，可以使用下面的方法，如果不是的话，就只能通过 DNS 通道来搭建环境，下面不做介绍。</p>
+<h4 id="购买服务器"><a href="#购买服务器" class="headerlink" title="购买服务器"></a>购买服务器</h4><blockquote>
+<p>下面都以阿里云服务器为例子</p>
+</blockquote>
+<p>如果你没有服务器，先在阿里云服务器上购买一个学生机，这是我的<a href="https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=hcbpp5n6" target="_blank" rel="noopener">推广链接 </a>，注册一个阿里云账号登陆并找到云翼计划，购买一个学生机，系统选择 centOS7，设置登陆密码，然后使用类似 putty 或 secureCRT 的 ssh 工具，远程连接到服务器上。</p>
+<h4 id="服务器环境搭建"><a href="#服务器环境搭建" class="headerlink" title="服务器环境搭建"></a>服务器环境搭建</h4><ul>
+<li><h5 id="安装-softether-VPN-server"><a href="#安装-softether-VPN-server" class="headerlink" title="安装 softether VPN server"></a>安装 softether VPN server</h5></li>
+</ul>
+<p>使用 ssh 工具连接到 vps 上，先更新 yum 源。</p>
+<p><img src="https://i.loli.net/2018/09/17/5b9fbc122385f.png" alt=""></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum update</span><br></pre></td></tr></table></figure>
+<p>输入 y 确认，然后安装依赖库</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install gcc zlib-devel openssl-devel readline-devel ncurses-devel</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>如果是 ubuntu 的话，使用的是 apt-get 来作为包管理器。</p>
+</blockquote>
+<p>在当前目录 /root 下载 softether VPN server 端</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://oks2t4o68.bkt.clouddn.com/softether-vpnserver-v4.22-9634-beta-2016.11.27-linux-x64-64bit.tar.gz</span><br></pre></td></tr></table></figure>
+<p>解压缩</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zvxf softether-vpnserver-v4.22-9634-beta-2016.11.27-linux-x64-64bit.tar.gz</span><br></pre></td></tr></table></figure>
+<p>进入目录并安装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd vpnserver</span><br><span class="line">make</span><br></pre></td></tr></table></figure>
+<p>选项全部选 1</p>
+<p>安装完后再当前目录继续输入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./vpnserver start</span><br></pre></td></tr></table></figure>
+<p>开启服务</p>
+<ul>
+<li><h5 id="设置-softether-VPN-server-服务端"><a href="#设置-softether-VPN-server-服务端" class="headerlink" title="设置 softether VPN server 服务端"></a>设置 softether VPN server 服务端</h5></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./vpncmd</span><br></pre></td></tr></table></figure>
+<p>依次输入 1，回车，回车，再输入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ServerPasswordSet</span><br></pre></td></tr></table></figure>
+<p>设置服务端密码，到此服务器端已经部署完毕</p>
+<h4 id="管理-softether-VPN-server"><a href="#管理-softether-VPN-server" class="headerlink" title="管理 softether VPN server"></a>管理 softether VPN server</h4><p>下面回到 pc 端，以 win10 为例，先从官网下载最新版 <a href="https://www.softether-download.com/cn.aspx?product=softether（需翻墙），然后安装管理工具，打开" target="_blank" rel="noopener">https://www.softether-download.com/cn.aspx?product=softether（需翻墙），然后安装管理工具，打开</a> slmgr.exe</p>
+<p><img src="https://i.loli.net/2018/09/17/5b9fbb93ed112.png" alt=""></p>
+<p>点击新设置</p>
+<p><img src="https://i.loli.net/2018/09/17/5b9fbd1161937.jpg" alt=""></p>
+<p>主机名填写你的<strong>vps 服务器 ip</strong>，输入你刚才设置的密码</p>
+<p>将弹出的设置关掉，进入主界面</p>
+<p><img src="https://i.loli.net/2018/09/17/5b9fbe50be650.jpg" alt=""></p>
+<p>点击管理虚拟 HUB</p>
+<p><img src="https://i.loli.net/2018/09/17/5b9fbe76ef3e0.png" alt=""></p>
+<p>再点击管理用户</p>
+<p><img src="https://i.loli.net/2018/09/17/5b9fbed0793d1.png" alt=""></p>
+<p>点击新建</p>
+<p><img src="https://i.loli.net/2018/09/17/5b9fbefc6f997.png" alt=""></p>
+<p>如图设置，用户名和密码自己填</p>
+<p>回到管理虚拟 HUB 界面，点击虚拟 NAT 的 DHCP 服务器，启用 SecureNAT</p>
+<p><img src="https://i.loli.net/2018/09/17/5b9fbf1c907bf.png" alt=""></p>
+<p>将端口改为 53，并点击为 OpenVPN Client 生成配置样本文件，将其保存到一个地方。</p>
+<p><img src="https://i.loli.net/2018/09/17/5b9fbf956a7d5.png" alt=""></p>
+<h4 id="配置-OpenVPN"><a href="#配置-OpenVPN" class="headerlink" title="配置 OpenVPN"></a>配置 OpenVPN</h4><p>到官网下载 OpenVPN，<a href="https://openvpn.net/index.php/open-source/downloads.html（需翻墙，跟" target="_blank" rel="noopener">https://openvpn.net/index.php/open-source/downloads.html（需翻墙，跟</a> VPN 有关的东西在国内墙得厉害），下载 windows 版并安装，然后打开，点击 Import file 将刚才的样本文件中的以 l3 结尾的文件导入到 OpenVPN 的配置目录中</p>
+<p><img src="https://i.loli.net/2018/09/17/5b9fc2a1346f4.png" alt=""></p>
+<p><img src="https://i.loli.net/2018/09/17/5b9fc2cd88e75.png" alt=""></p>
+<p>导入完之后点击 connect</p>
+<p><img src="https://i.loli.net/2018/09/17/5b9fc30bdf586.png" alt=""></p>
+<p>将你刚才设置的虚拟 HUB 中的用户名和密码输入，勾选 Save password，如果出现这个提示，就表示设置成功了</p>
+<p><img src="https://i.loli.net/2018/09/17/5b9fc3a8cce0b.png" alt=""></p>
+<p>这时你可以注销认证，再试试连接，发现依然可以联网。</p>
+<h3 id="三、实际使用"><a href="#三、实际使用" class="headerlink" title="三、实际使用"></a>三、实际使用</h3><p>阿里云学生服务器自带的带宽是 1M，网速很不理想，最快也就 150K/s 的速度，但是阿里云可以通过暂时提升带宽来提升网速，总的来说就是服务器的带宽决定了我们的网速，下面是 10M 的速度作为参考。。。</p>
+<p><img src="https://i.loli.net/2018/09/17/5b9fc5f489c7c.png" alt=""></p>
+<p>如果没有特殊的需求的话，看看普通网页的话 1M 的速度够了，主要是可以解决 12 点后完全没网的尴尬。</p>
+<h4 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h4><ul>
+<li><a href="https://www.bennythink.com/udp53.html" target="_blank" rel="noopener">UDP 53 免费上网、DNS 隧道经验谈 </a></li>
+<li><a href="https://www.bennythink.com/softether-vpnserver.html" target="_blank" rel="noopener">SoftEther VPN Server 安装笔记 + 福利 </a></li>
+<li><a href="https://blog.csdn.net/qq_39591494/article/details/78625394" target="_blank" rel="noopener">Centos7.4 使用 SoftEther 搭建 VPN</a></li>
+</ul>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+    <div>
   
-  
-
-
-
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束 感谢您的阅读-------------</div>
+    
 </div>
 
-</header>
-
-      
-      
-      
-      <div class="post-body">
-        
-        
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-                
-                
-                  
-                    
-                  
-                
-                  
-                    
-                  
-                
-                  
-                    
-                  
-                
-                  
-                    
-                  
-                
-                目前共计 4 个标签
-            </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/Linux/" style="font-size: 12px; color: #ccc">Linux</a> <a href="/tags/Linux实验/" style="font-size: 30px; color: #111">Linux实验</a> <a href="/tags/服务器/" style="font-size: 12px; color: #ccc">服务器</a> <a href="/tags/校园网/" style="font-size: 12px; color: #ccc">校园网</a>
-            </div>
-          </div>
-        
-      </div>
-      
-      
-      
+  
     </div>
     
 
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>XZX</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://blog.henryxzx.com/2018/09/17/通过UDP53 实现校园网免认证上网/" title="通过UDP53实现校园网免认证上网">http://blog.henryxzx.com/2018/09/17/通过UDP53 实现校园网免认证上网/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/校园网/" rel="tag"><i class="fa fa-tag"></i> 校园网</a>
+          
+            <a href="/tags/Linux/" rel="tag"><i class="fa fa-tag"></i> Linux</a>
+          
+            <a href="/tags/服务器/" rel="tag"><i class="fa fa-tag"></i> 服务器</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div class="social_share">
+            
+            
+               <div id="needsharebutton-postbottom">
+                 <span class="btn">
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                 </span>
+               </div>
+            
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/09/10/Linux教程/" rel="next" title="Linux教程">
+                <i class="fa fa-chevron-left"></i> Linux教程
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
 
 
-    
-    
-    
   </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTc3MC8xNjI5Nw=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -453,8 +709,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -572,6 +837,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、-前言"><span class="nav-number">1.</span> <span class="nav-text">一、 前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、环境搭建"><span class="nav-number">2.</span> <span class="nav-text">二、环境搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#测试网关"><span class="nav-number">2.1.</span> <span class="nav-text">测试网关</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#购买服务器"><span class="nav-number">2.2.</span> <span class="nav-text">购买服务器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#服务器环境搭建"><span class="nav-number">2.3.</span> <span class="nav-text">服务器环境搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#安装-softether-VPN-server"><span class="nav-number">2.3.1.</span> <span class="nav-text">安装 softether VPN server</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#设置-softether-VPN-server-服务端"><span class="nav-number">2.3.2.</span> <span class="nav-text">设置 softether VPN server 服务端</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#管理-softether-VPN-server"><span class="nav-number">2.4.</span> <span class="nav-text">管理 softether VPN server</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置-OpenVPN"><span class="nav-number">2.5.</span> <span class="nav-text">配置 OpenVPN</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、实际使用"><span class="nav-number">3.</span> <span class="nav-text">三、实际使用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#参考文章"><span class="nav-number">3.1.</span> <span class="nav-text">参考文章</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -752,6 +1033,20 @@
 
 
 
+  
+    <script type="text/javascript">
+      window.livereOptions = {
+        refer: '2018/09/17/通过UDP53 实现校园网免认证上网/'
+      };
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
@@ -1094,43 +1389,35 @@
   
   <script>
     
-    function showTime(Counter) {
-      var entries = [];
+    function addCount(Counter) {
       var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
 
-      $visitors.each(function () {
-        entries.push( $(this).attr("id").trim() );
-      });
-
-      Counter('get', '/classes/Counter', { where: JSON.stringify({ url: { "$in": entries } }) })
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
         .done(function ({ results }) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.url;
-            var time = item.time;
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for(var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if( countSpan.text() == '') {
-              countSpan.text(0);
-            }
+          if (results.length > 0) {
+            var counter = results[0];
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text(counter.time + 1);
+            
+            Counter('put', `/classes/Counter/${counter.objectId}`, JSON.stringify({ time: { "__op":"Increment", "amount":1 } }))
+            
+            .fail(function ({ responseJSON }) {
+                console.log('Failed to save Visitor num, with error message: ' + responseJSON.error);
+            })
+          } else {
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text('Counter not initialized! See more at console err msg.');
+              console.error('ATTENTION! LeanCloud counter has security bug, see here how to solve it: https://github.com/theme-next/hexo-leancloud-counter-security. \n But you also can use LeanCloud without security, by set \'security\' option to \'false\'.');
+            
           }
         })
-        .fail(function ({ responseJSON }) {
-          console.log("LeanCloud Counter Error: " + responseJSON.code + " " + responseJSON.error);
-        });
+      .fail(function ({ responseJSON }) {
+        console.log('LeanCloud Counter Error:' + responseJSON.code + " " + responseJSON.error);
+      });
     }
     
 
@@ -1150,9 +1437,7 @@
             });
           };
           
-          if ($('.post-title-link').length >= 1) {
-            showTime(Counter);
-          }
+          addCount(Counter);
           
         })
     });
