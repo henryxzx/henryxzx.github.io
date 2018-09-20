@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.henryxzx.com/"/>
-  <updated>2018-09-20T11:09:02.707Z</updated>
+  <updated>2018-09-20T12:17:18.635Z</updated>
   <id>http://blog.henryxzx.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Visual Works Character Prototype</title>
+    <link href="http://blog.henryxzx.com/2018/09/20/VISUAL-WORKS/"/>
+    <id>http://blog.henryxzx.com/2018/09/20/VISUAL-WORKS/</id>
+    <published>2018-09-20T11:54:28.000Z</published>
+    <updated>2018-09-20T12:17:18.635Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>Fascinate the world with your ideas.</p><p>Let this character guide you.</p></blockquote><a id="more"></a><p>Youtube：</p><iframe width="560" height="315" src="https://www.youtube.com/embed/ahcgkIruXwc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><p>Bilibili：</p><iframe src="//player.bilibili.com/player.html?aid=32089813&cid=56135765&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;Fascinate the world with your ideas.&lt;/p&gt;
+&lt;p&gt;Let this character guide you.&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="游戏CG" scheme="http://blog.henryxzx.com/tags/%E6%B8%B8%E6%88%8FCG/"/>
+    
+  </entry>
   
   <entry>
     <title>通过UDP53实现校园网免认证上网</title>
