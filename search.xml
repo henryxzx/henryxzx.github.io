@@ -71,7 +71,7 @@
   <entry>
     <title><![CDATA[Linux课堂练习1]]></title>
     <url>%2F2018%2F04%2F16%2FLinux%E8%AF%BE%E5%A0%82%E7%BB%83%E4%B9%A01%2F</url>
-    <content type="text"><![CDATA[环境：win10 + redhat 5 1、创建组testgroup；1groupadd testgroup 2、创建用户a2012，先采用默认设置创建，然后使该用户加入testgroup组。12useradd a2012usermod -g testgroup 3、创建用户a2013，其用户主目录为/tmp/a2013，其主组为testgroup，附加组为users。123useradd a2013usermod -g testgroupusermod -G users 4、用id命令显示a2012和a2013用户信息，并且把这些信息记录到日志文件/tmp/test.log中。12id a2012 &gt; /tmp/test.logid a2013 &gt;&gt; /tmp/test.log 5、参考书本98-99页crontab命令内容，使用root执行crontab -e，编写时程表，完成每隔5分钟把当前时间追加进/tmp/test.log中。12crontab -e*/5 * * * * date &gt;&gt; /tmp/test.log 6、执行crontab -l，把输出内容追加进/tmp/test.log。1crontab -l &gt;&gt; /tmp/test.log 7、待完成2次时间记录追加后，执行crontab -r删除当前的时程表。1crontab -r 8、把/tmp/test.log拷贝到windows中（注意文本格式的转换），采用记事本打开，看是否看到完整内容。1unix2dos test.log #将unix中的换行符转换为dos环境下能识别的类型 最后将文件复制到win环境下得到test.log]]></content>
+    <content type="text"><![CDATA[环境：win10 + redhat 5 1、创建组testgroup。1groupadd testgroup 2、创建用户a2012，先采用默认设置创建，然后使该用户加入testgroup组。12useradd a2012usermod -g testgroup 3、创建用户a2013，其用户主目录为/tmp/a2013，其主组为testgroup，附加组为users。123useradd a2013usermod -g testgroupusermod -G users 4、用id命令显示a2012和a2013用户信息，并且把这些信息记录到日志文件/tmp/test.log中。12id a2012 &gt; /tmp/test.logid a2013 &gt;&gt; /tmp/test.log 5、参考书本98-99页crontab命令内容，使用root执行crontab -e，编写时程表，完成每隔5分钟把当前时间追加进/tmp/test.log中。12crontab -e*/5 * * * * date &gt;&gt; /tmp/test.log 6、执行crontab -l，把输出内容追加进/tmp/test.log。1crontab -l &gt;&gt; /tmp/test.log 7、待完成2次时间记录追加后，执行crontab -r删除当前的时程表。1crontab -r 8、把/tmp/test.log拷贝到windows中（注意文本格式的转换），采用记事本打开，看是否看到完整内容。1unix2dos test.log #将unix中的换行符转换为dos环境下能识别的类型 最后将文件复制到win环境下得到test.log]]></content>
       <categories>
         <category>Linux</category>
       </categories>
