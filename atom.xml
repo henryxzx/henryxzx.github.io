@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.henryxzx.com/"/>
-  <updated>2018-10-22T04:01:14.670Z</updated>
+  <updated>2018-10-22T14:37:22.472Z</updated>
   <id>http://blog.henryxzx.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HTTP协议中的GET和POST方法</title>
+    <link href="http://blog.henryxzx.com/2018/10/22/get-post/"/>
+    <id>http://blog.henryxzx.com/2018/10/22/get-post/</id>
+    <published>2018-10-22T13:16:37.000Z</published>
+    <updated>2018-10-22T14:37:22.472Z</updated>
+    
+    <content type="html"><![CDATA[<hr><blockquote><p><strong>两种最常用的 HTTP 方法是：GET 和 POST。</strong></p></blockquote><hr><a id="more"></a><h3 id="什么是HTTP"><a href="#什么是HTTP" class="headerlink" title="什么是HTTP"></a>什么是HTTP</h3><ul><li>超文本传输协议（HTTP）的设计目的是保证客户机和服务器之间的通信。</li><li>HTTP的工作方式是客户机与服务器之间的请求-应答协议</li><li>web 浏览器可能是客户端，而计算机上的网络应用程序也可能作为服务器端。</li></ul><hr><h3 id="GET方法"><a href="#GET方法" class="headerlink" title="GET方法"></a>GET方法</h3><p>在get方法中，查询字符串（名称/值对）是在GET请求的URL中发送的，例如：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.baidu.com/baidu?isource=infinity&amp;iname=baidu&amp;itype=web&amp;tn=98012088_9_dg&amp;ch=7&amp;ie=utf-8&amp;wd=xxxxx</span><br></pre></td></tr></table></figure><p>有关 GET 请求的其他一些注释：</p><ul><li><p>GET 请求可被缓存</p></li><li><p>GET 请求保留在浏览器历史记录中</p></li><li><p>GET 请求可被收藏为书签</p></li><li><p>GET 请求不应在处理敏感数据时使用</p></li><li><p>GET 请求只应当用于取回数据</p></li></ul><hr><h3 id="POST方法"><a href="#POST方法" class="headerlink" title="POST方法"></a>POST方法</h3><p>在post方法中，查询字符串（名称/值对）是在POST请求的HTTP消息主体中发送的</p><p>有关 POST 请求的其他一些注释：</p><ul><li><p>POST 请求不会被缓存</p></li><li><p>POST 请求不会保留在浏览器历史记录中</p></li><li><p>POST 不能被收藏为书签</p></li></ul><hr><h3 id="比较-GET-与-POST"><a href="#比较-GET-与-POST" class="headerlink" title="比较 GET 与 POST"></a>比较 GET 与 POST</h3><p>下面的表格列出了比较了两种 HTTP 方法的一般理解：GET 和 POST。</p><table><thead><tr><th></th><th>GET</th><th>POST</th></tr></thead><tbody><tr><td>后退按钮/刷新</td><td>无害</td><td>数据会被重新提交（浏览器应该告知用户数据会被重新提交）。</td></tr><tr><td>书签</td><td>可收藏为书签</td><td>不可收藏为书签</td></tr><tr><td>缓存</td><td>能被缓存</td><td>不能缓存</td></tr><tr><td>编码类型</td><td>application/x-www-form-urlencoded</td><td>application/x-www-form-urlencoded 或 multipart/form-data。为二进制数据使用多重编码。</td></tr><tr><td>历史</td><td>参数保留在浏览器历史中。</td><td>参数不会保存在浏览器历史中。</td></tr><tr><td>对数据长度的限制</td><td>是的。当发送数据时，GET 方法向 URL 添加数据；URL 的长度是受限制的（URL 的最大长度是 2048 个字符）。</td><td>无限制。</td></tr><tr><td>对数据类型的限制</td><td>只允许 ASCII 字符。</td><td>没有限制。也允许二进制数据。</td></tr><tr><td>安全性</td><td>与 POST 相比，GET 的安全性较差，因为所发送的数据是 URL 的一部分。在发送密码或其他敏感信息时绝不要使用 GET ！</td><td>POST 比 GET 更安全，因为参数不会被保存在浏览器历史或 web 服务器日志中。</td></tr><tr><td>可见性</td><td>数据在 URL 中对所有人都是可见的。</td><td>数据不会显示在 URL 中。</td></tr></tbody></table><blockquote><p>上图中，http协议对于URL长度其实是没有限制的，只是<strong>Web服务器</strong>和<strong>浏览器</strong>对URI都有自己的长度限制</p><blockquote><p><strong>服务器的限制</strong>：接触的最多的服务器类型就是Nginx和Tomcat，对于url的长度限制是通过控制http请求头的长度来进行限制的，nginx的配置参数为large_client_header_buffers，tomcat的请求配置参数为 maxHttpHeaderSize。</p></blockquote><blockquote><p><strong>浏览器的限制</strong>：每种浏览器也会对url的长度有所限制。</p></blockquote></blockquote><hr><h3 id="其他-HTTP-请求方法"><a href="#其他-HTTP-请求方法" class="headerlink" title="其他 HTTP 请求方法"></a>其他 HTTP 请求方法</h3><p>下面的表格列出了其他一些 HTTP 请求方法：</p><table><thead><tr><th>方法</th><th>描述</th></tr></thead><tbody><tr><td>HEAD</td><td>与 GET 相同，但只返回 HTTP 报头，不返回文档主体。</td></tr><tr><td>PUT</td><td>上传指定的 URI 表示。</td></tr><tr><td>DELETE</td><td>删除指定资源。</td></tr><tr><td>OPTIONS</td><td>返回服务器支持的 HTTP 方法。</td></tr><tr><td>CONNECT</td><td>把请求连接转换到透明的 TCP/IP 通道。</td></tr></tbody></table><hr><h3 id="深入了解GET和POST方法"><a href="#深入了解GET和POST方法" class="headerlink" title="深入了解GET和POST方法"></a>深入了解GET和POST方法</h3><p>首先先来了解RFC：</p><blockquote><p>征求意见稿（英语：Request For Comments，缩写为RFC），是由互联网工程任务组（IETF）发布的一系列备忘录。文件收集了有关互联网相关信息，以及UNIX和互联网社区的软件文件，以编号排定。目前RFC文件是由互联网协会（ISOC）赞助发行。</p></blockquote><p>然后在来了解一下「语法」和「语义」semantic 的关系</p><blockquote><p>一种语言是合法句子的集合。什么样的句子是合法的呢？可以从两方面来判断：语法和语义。语法是和文法结构有关，然而语义是和按照这个结构所组合的单词符号的意义有关。合理的语法结构并不表明语义是合法的。例如我们常说：我上大学，这个句子是符合语法规则的，也符合语义规则。但是大学上我，虽然符合语法规则，但没有什么意义，所以说是不符合语义的。</p></blockquote><p>语义则定义了这一类型的请求具有什么样的性质。比如GET的语义就是「获取资源」，POST的语义是「处理资源」，那么在具体实现这两个方法时，就必须考虑其语义，做出符合其语义的行为。</p><p>当然在符合语法的前提下实现违背语义的行为也是可以做到的，比如使用GET方法修改用户信息，POST获取资源列表，这样就只能说这个请求是「合法」的，但不是「符合语义」的。 写到这里突然联想到XML里面的两个概念：Well Formed和Valid，似乎也正是语法和语义的理念呢。</p><p>上文说到方法是请求语义的主要来源，也即是还有次要来源，一些请求Header可以进一步修饰请求的语义，比如一个带上了 <code>Range</code> Header的GET请求就变成了部分请求。</p><p>RFC7231里紧接着定义了HTTP方法的几个特性：</p><ol><li>Safe - 安全<br>这里的「安全」和通常理解的「安全」意义不同，如果一个方法的语义在本质上是「只读」的，那么这个方法就是安全的。客户端向服务端的资源发起的请求如果使用了是安全的方法，就不应该引起服务端任何的状态变化，因此也是无害的。 此RFC定义，GET, HEAD, OPTIONS 和 TRACE 这几个方法是安全的。<br>但是这个定义只是规范，并不能保证方法的实现也是安全的，服务端的实现可能会不符合方法语义，正如上文说过的使用GET修改用户信息的情况。<br>引入安全这个概念的目的是为了方便网络爬虫和缓存，以免调用或者缓存某些不安全方法时引起某些意外的后果。User Agent（浏览器）应该在执行安全和不安全方法时做出区分对待，并给用户以提示。</li><li>Idempotent - 幂等<br>幂等的概念是指同一个请求方法执行多次和仅执行一次的效果完全相同。按照RFC规范，PUT，DELETE和安全方法都是幂等的。同样，这也仅仅是规范，服务端实现是否幂等是无法确保的。<br>引入幂等主要是为了处理同一个请求重复发送的情况，比如在请求响应前失去连接，如果方法是幂等的，就可以放心地重发一次请求。这也是浏览器在后退/刷新时遇到POST会给用户提示的原因：POST语义不是幂等的，重复请求可能会带来意想不到的后果。</li><li>Cacheable - 可缓存性 顾名思义就是一个方法是否可以被缓存，此RFC里GET，HEAD和某些情况下的POST都是可缓存的，但是绝大多数的浏览器的实现里仅仅支持GET和HEAD。关于缓存的更多内容可以去看RFC7234。</li></ol><p>在这三个特性里一直在强调同一个事情，那就是协议不等于实现：协议规定安全在实现里不一定安全，协议规定幂等在实现里不一定幂等，协议规定可缓存在实现里不一定可缓存。</p><p>GET的语义是请求获取指定的资源。GET方法是安全、幂等、可缓存的（除非有 <code>Cache-Control</code> Header的约束）,GET方法的报文主体没有任何语义。</p><p>POST的语义是根据请求负荷（报文主体）对指定的资源做出处理，具体的处理方式视资源类型而不同。POST不安全，不幂等，（大部分实现）不可缓存。</p><p> 参考文章：</p><p><a href="https://sunshinevvv.coding.me/blog/2017/02/09/HttpGETv.s.POST/" target="_blank" rel="noopener">HTTP协议中GET和POST方法的区别</a></p><p><a href="http://www.w3school.com.cn/tags/html_ref_httpmethods.asp" target="_blank" rel="noopener">HTTP 方法：GET 对比 POST</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;两种最常用的 HTTP 方法是：GET 和 POST。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+      <category term="计算机网络" scheme="http://blog.henryxzx.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+      <category term="HTTP" scheme="http://blog.henryxzx.com/tags/HTTP/"/>
+    
+  </entry>
   
   <entry>
     <title>用scrapy爬取伯乐在线的文章</title>
