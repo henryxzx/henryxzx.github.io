@@ -123,16 +123,25 @@
 
 
 
-  <meta name="description" content="keep the groovy.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="henRyXzx">
-<meta property="og:url" content="http://blog.henryxzx.com/tags/Linux/index.html">
+  <meta name="description" content="用Charles对Http请求进行抓取 Charles 是在 Mac 下常用的网络封包截取工具，在做移动开发时，我们为了调试与服务器端的网络通讯协议，常常需要截取网络封包来分析。 Charles 通过将自己设置成系统的网络访问代理服务器，使得所有的网络访问请求都通过它来完成，从而实现了网络封包的截取和分析。 除了在做移动开发中调试端口外，Charles 也可以用于分析第三方应用的通讯协议。配合 C">
+<meta name="keywords" content="Http,Charles">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MacOS下设置 iTerms &amp; Oh-My-Zsh">
+<meta property="og:url" content="http://blog.henryxzx.com/2018/12/06/用Charles对Http请求进行抓取/index.html">
 <meta property="og:site_name" content="henRyXzx">
-<meta property="og:description" content="keep the groovy.">
+<meta property="og:description" content="用Charles对Http请求进行抓取 Charles 是在 Mac 下常用的网络封包截取工具，在做移动开发时，我们为了调试与服务器端的网络通讯协议，常常需要截取网络封包来分析。 Charles 通过将自己设置成系统的网络访问代理服务器，使得所有的网络访问请求都通过它来完成，从而实现了网络封包的截取和分析。 除了在做移动开发中调试端口外，Charles 也可以用于分析第三方应用的通讯协议。配合 C">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://i.loli.net/2018/11/30/5c00e2579b119.png">
+<meta property="og:image" content="https://i.loli.net/2018/11/30/5c00e24dd1d67.png">
+<meta property="og:image" content="https://i.loli.net/2018/12/02/5c038362160e5.png">
+<meta property="og:image" content="http://blog.henryxzx.com/Users/henryxzx/Desktop/屏幕快照%202018-11-30%20下午3.48.57.png">
+<meta property="og:image" content="https://i.loli.net/2018/12/02/5c038391bbb02.png">
+<meta property="og:image" content="https://i.loli.net/2018/12/02/5c0383b1a2fd4.png">
+<meta property="og:updated_time" content="2018-12-06T14:34:28.160Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="henRyXzx">
-<meta name="twitter:description" content="keep the groovy.">
+<meta name="twitter:title" content="MacOS下设置 iTerms &amp; Oh-My-Zsh">
+<meta name="twitter:description" content="用Charles对Http请求进行抓取 Charles 是在 Mac 下常用的网络封包截取工具，在做移动开发时，我们为了调试与服务器端的网络通讯协议，常常需要截取网络封包来分析。 Charles 通过将自己设置成系统的网络访问代理服务器，使得所有的网络访问请求都通过它来完成，从而实现了网络封包的截取和分析。 除了在做移动开发中调试端口外，Charles 也可以用于分析第三方应用的通讯协议。配合 C">
+<meta name="twitter:image" content="https://i.loli.net/2018/11/30/5c00e2579b119.png">
 
 
 
@@ -141,7 +150,7 @@
 
 
 
-  <link rel="canonical" href="http://blog.henryxzx.com/tags/Linux/">
+  <link rel="canonical" href="http://blog.henryxzx.com/2018/12/06/用Charles对Http请求进行抓取/">
 
 
 
@@ -151,7 +160,7 @@
   };
 </script>
 
-  <title>标签: Linux | henRyXzx</title>
+  <title>MacOS下设置 iTerms & Oh-My-Zsh | henRyXzx</title>
   
 
 
@@ -208,7 +217,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband">
       <a href="https://github.com/henryxzx/henryxzx.github.io" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
       
@@ -260,7 +269,7 @@
         
         
           
-          <li class="menu-item menu-item-tags menu-item-active">
+          <li class="menu-item menu-item-tags">
     <a href="/tags/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
   </li>
@@ -338,79 +347,311 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>Linux<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
+
+  
 
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.henryxzx.com/2018/12/06/用Charles对Http请求进行抓取/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="XZX">
+      <meta itemprop="description" content="keep the groovy.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="henRyXzx">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/09/17/通过UDP53 实现校园网免认证上网/" itemprop="url">
-              
-                <span itemprop="name">通过UDP53实现校园网免认证上网</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">MacOS下设置 iTerms & Oh-My-Zsh
+              
+            
+          </h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-09-17T20:02:47+08:00" content="2018-09-17">
-          09-17
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
 
-    </header>
-  </article>
+            
+            
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-12-06 22:30:47 / 修改时间：22:34:28" itemprop="dateCreated datePublished" datetime="2018-12-06T22:30:47+08:00">2018-12-06</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/实用工具/" itemprop="url" rel="index"><span itemprop="name">实用工具</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/12/06/用Charles对Http请求进行抓取/" class="leancloud_visitors" data-flag-title="MacOS下设置 iTerms & Oh-My-Zsh">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">热度：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+                 <span>℃</span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="用Charles对Http请求进行抓取"><a href="#用Charles对Http请求进行抓取" class="headerlink" title="用Charles对Http请求进行抓取"></a>用Charles对Http请求进行抓取</h3><hr>
+<p><a href="http://www.charlesproxy.com/" target="_blank" rel="noopener">Charles</a> 是在 Mac 下常用的网络封包截取工具，在做<br>移动开发时，我们为了调试与服务器端的网络通讯协议，常常需要截取网络封包来分析。</p>
+<p>Charles 通过将自己设置成系统的网络访问代理服务器，使得所有的网络访问请求都通过它来完成，从而实现了网络封包的截取和分析。</p>
+<p>除了在做移动开发中调试端口外，Charles 也可以用于分析第三方应用的通讯协议。配合 Charles 的 SSL 功能，Charles 还可以分析 Https 协议。</p>
+<a id="more"></a>
+<p>Charles 是收费软件，可以免费试用 30 天。试用期过后，未付费的用户仍然可以继续使用，但是每次使用时间不能超过 30 分钟，并且启动时将会有 10 秒种的延时。因此，该付费方案对广大用户还是相当友好的，即使你长期不付费，也能使用完整的软件功能。只是当你需要长时间进行封包调试时，会因为 Charles 强制关闭而遇到影响。</p>
+<p>Charles 主要的功能包括：</p>
+<ol>
+<li>截取 Http 和 Https 网络封包。</li>
+<li>支持重发网络请求，方便后端调试。</li>
+<li>支持修改网络请求参数。</li>
+<li>支持网络请求的截获并动态修改。</li>
+<li>支持模拟慢速网络。</li>
+</ol>
+<p>Charles 4 新增的主要功能包括：</p>
+<ol>
+<li>支持 Http 2。</li>
+<li>支持 IPv6。</li>
+</ol>
+<h3 id="安装Charles"><a href="#安装Charles" class="headerlink" title="安装Charles"></a>安装Charles</h3><hr>
+<p>官网安装，速度有点慢</p>
+<h3 id="设置系统代理"><a href="#设置系统代理" class="headerlink" title="设置系统代理"></a>设置系统代理</h3><hr>
+<ul>
+<li>打开<code>Proxy</code>选项，选中其中的<code>macOS proxy</code>，打开系统代理<br><img src="https://i.loli.net/2018/11/30/5c00e2579b119.png" alt=""></li>
+<li>在Chrome浏览器中是默认不使用系统代理的，需要在Chrome里手动设置，或者安装一个Chrome插件：<a href="chrome-extension://padekgcemlokbadohgkifijomclgjgif/options.html#!/about" target="_blank" rel="noopener">SwitchyOmega</a> 。在上面设置一个charles的情景模式，如下图：</li>
+</ul>
+<p><img src="https://i.loli.net/2018/11/30/5c00e24dd1d67.png" alt=""></p>
+<hr>
+<h3 id="Charles的主界面"><a href="#Charles的主界面" class="headerlink" title="Charles的主界面"></a>Charles的主界面</h3><hr>
+<p><img src="https://i.loli.net/2018/12/02/5c038362160e5.png" alt=""></p>
+<ul>
+<li>页面有<code>Structure</code>和<code>Sequence</code>两种显示模式。</li>
+</ul>
+<ol>
+<li><code>Structure</code> 视图将网络请求按访问的域名分类。</li>
+<li><code>Sequence</code> 视图将网络请求按访问的时间排序，<code>Sequence</code>类似于Chrome的开发者模式。</li>
+</ol>
+<ul>
+<li>对于显示在界面上的网页请求，可以在<code>Filter</code>中进行简单的筛选</li>
+</ul>
+<h3 id="筛选页面设置"><a href="#筛选页面设置" class="headerlink" title="筛选页面设置"></a>筛选页面设置</h3><hr>
+<ul>
+<li>在主界面<code>Filter</code>中输入需要筛选的网页</li>
+<li>在Charles的菜单选项中选择<code>Proxy</code>-&gt;<code>Recording Settings</code>，然后选择<code>Inlcude</code>栏，<code>Add</code>你需要添加的网站。<img src="/Users/henryxzx/Desktop/屏幕快照 2018-11-30 下午3.48.57.png" alt="屏幕快照 2018-11-30 下午3.48.57"></li>
+<li>在想要过滤的网页右键选择<code>Focus</code>，后在<code>Filter</code>栏右边勾选<code>Focused</code>项。</li>
+</ul>
+<h3 id="抓取https信息"><a href="#抓取https信息" class="headerlink" title="抓取https信息"></a>抓取https信息</h3><hr>
+<h4 id="安装证书"><a href="#安装证书" class="headerlink" title="安装证书"></a>安装证书</h4><p>如果没有设置这一步的话，你是抓取不到https信息的，如果需要截取分析Https协议相关的内容，就需要安装Charles的CA证书。</p>
+<ol>
+<li><p>在Charles顶部菜单栏中选择<code>Help</code>，在选择<code>SSL Proxying</code> - &gt; <code>Install Chrales Root Certificate</code></p>
+</li>
+<li><p>在系统的<code>KeyClain</code>中将Charles的证书选为信任</p>
+</li>
+<li>设置某个网站或者所有网站都默认截取HTTPS请求，在<code>SSL Proxyingz Settings</code>中设置，<code>Add</code>一个新的规则。</li>
+</ol>
+<h4 id="修改GET请求的参数"><a href="#修改GET请求的参数" class="headerlink" title="修改GET请求的参数"></a>修改GET请求的参数</h4><p>在上面已经设置好了之后，就可以对抓取到的Http请求进行改包，以百度为例，可以看出，搜索的内容就是在GET方法中的wd属性的值来决定的。</p>
+<p><img src="https://i.loli.net/2018/12/02/5c038391bbb02.png" alt=""></p>
+<p>所以我们给这个请求标记一个breakpoints，在Charles主界面enable breakpoints，然后Command + R刷新页面，页面请求会先经过Charles，再返回到浏览器中，可以看到目前搜索了一串字符test，将其改为测试，点击<code>Execute</code>，继续执行接受下一个请求，最后可以看到百度的结果为后面修改的内容。</p>
+<p><img src="https://i.loli.net/2018/12/02/5c0383b1a2fd4.png" alt=""></p>
 
       
     </div>
 
+    
+
+    
+    
+    
+    <div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束 感谢您的阅读-------------</div>
+    
+</div>
+
+  
+    </div>
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>XZX</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://blog.henryxzx.com/2018/12/06/用Charles对Http请求进行抓取/" title="MacOS下设置 iTerms & Oh-My-Zsh">http://blog.henryxzx.com/2018/12/06/用Charles对Http请求进行抓取/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Http/" rel="tag"><i class="fa fa-tag"></i> Http</a>
+          
+            <a href="/tags/Charles/" rel="tag"><i class="fa fa-tag"></i> Charles</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div class="social_share">
+            
+            
+               <div id="needsharebutton-postbottom">
+                 <span class="btn">
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                 </span>
+               </div>
+            
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/12/06/MacOS下设置 iTerms & Oh-My-Zsh/" rel="next" title="MacOS下设置 iTerms & Oh-My-Zsh">
+                <i class="fa fa-chevron-left"></i> MacOS下设置 iTerms & Oh-My-Zsh
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTc3MC8xNjI5Nw=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -431,8 +672,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -572,6 +822,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#用Charles对Http请求进行抓取"><span class="nav-number">1.</span> <span class="nav-text">用Charles对Http请求进行抓取</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Charles"><span class="nav-number">2.</span> <span class="nav-text">安装Charles</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置系统代理"><span class="nav-number">3.</span> <span class="nav-text">设置系统代理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Charles的主界面"><span class="nav-number">4.</span> <span class="nav-text">Charles的主界面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#筛选页面设置"><span class="nav-number">5.</span> <span class="nav-text">筛选页面设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#抓取https信息"><span class="nav-number">6.</span> <span class="nav-text">抓取https信息</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装证书"><span class="nav-number">6.1.</span> <span class="nav-text">安装证书</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改GET请求的参数"><span class="nav-number">6.2.</span> <span class="nav-text">修改GET请求的参数</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -736,6 +1002,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.4.1"></script>
+
+
 
   
 
@@ -748,6 +1018,20 @@
 
 
 
+  
+    <script type="text/javascript">
+      window.livereOptions = {
+        refer: '2018/12/06/用Charles对Http请求进行抓取/'
+      };
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
@@ -1090,43 +1374,35 @@
   
   <script>
     
-    function showTime(Counter) {
-      var entries = [];
+    function addCount(Counter) {
       var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
 
-      $visitors.each(function () {
-        entries.push( $(this).attr("id").trim() );
-      });
-
-      Counter('get', '/classes/Counter', { where: JSON.stringify({ url: { "$in": entries } }) })
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
         .done(function ({ results }) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.url;
-            var time = item.time;
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for(var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if( countSpan.text() == '') {
-              countSpan.text(0);
-            }
+          if (results.length > 0) {
+            var counter = results[0];
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text(counter.time + 1);
+            
+            Counter('put', `/classes/Counter/${counter.objectId}`, JSON.stringify({ time: { "__op":"Increment", "amount":1 } }))
+            
+            .fail(function ({ responseJSON }) {
+                console.log('Failed to save Visitor num, with error message: ' + responseJSON.error);
+            })
+          } else {
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text('Counter not initialized! See more at console err msg.');
+              console.error('ATTENTION! LeanCloud counter has security bug, see here how to solve it: https://github.com/theme-next/hexo-leancloud-counter-security. \n But you also can use LeanCloud without security, by set \'security\' option to \'false\'.');
+            
           }
         })
-        .fail(function ({ responseJSON }) {
-          console.log("LeanCloud Counter Error: " + responseJSON.code + " " + responseJSON.error);
-        });
+      .fail(function ({ responseJSON }) {
+        console.log('LeanCloud Counter Error:' + responseJSON.code + " " + responseJSON.error);
+      });
     }
     
 
@@ -1146,9 +1422,7 @@
             });
           };
           
-          if ($('.post-title-link').length >= 1) {
-            showTime(Counter);
-          }
+          addCount(Counter);
           
         })
     });
